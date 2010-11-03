@@ -24,7 +24,9 @@ class IMissYou:
 						continue
 					if c.id == self.otherid:
 						if hasattr(c,'otherid'):
-							self.error("duplicate client")
+							print "duplicate client"
+							self.halt("duplicate client")
+							return
 						else:
 							c.otherid=self.id 
 							c.other=self

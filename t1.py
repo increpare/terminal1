@@ -12,7 +12,7 @@ class MyReceiver(basic.LineReceiver):
 		if line=="imissyou":
 			self.addClass(IMissYou)
 		else:
-			self.halt()
+			self.halt("185")
 
 	def addClass(self,newClass):
 		self.message = types.MethodType(newClass.message.im_func,self,self.__class__)
@@ -26,13 +26,13 @@ class MyReceiver(basic.LineReceiver):
 		print "Connection from" + str(self.transport.getPeer().host)
 
 	def connectionLost(self,reason):
-		print "Lost a client!"
+		print "disconnect"
 		self.factory.clients.remove(self)
 	
 	def lineReceived(self,line):
 		if line == "<policy-file-request/>":
 			print "\t sending policy file"
-			self.sendLine("<?xml version=\"1.0\"?><cross-domain-policy><allow-access-from domain=\"*\" to-ports=\"7000\" /></cross-domain-policy>")
+			self.sendLine("<?xml version=\"1.0\"?><cross-domain-policy><allow-access-from domain=\"*\" to-ports=\"38527\" /></cross-domain-policy>")
 		elif self.state=="preinitializing":
 			self.setGame(line)
 			self.state="initializing"
@@ -41,8 +41,8 @@ class MyReceiver(basic.LineReceiver):
 
 
 
-	def halt(self):
-		self.sendLine("ERROR")
+	def halt(self,msg):
+		self.sendLine("ERROR:"+msg)
 		self.transport.loseConnection()
 
 class XMLSocket(protocol.Factory):
@@ -53,7 +53,7 @@ class XMLSocket(protocol.Factory):
 		self.protocol=protocol
 
 def main():
-	reactor.listenTCP(7000, XMLSocket(MyReceiver))
+	reactor.listenTCP(38527, XMLSocket(MyReceiver))
 	reactor.run()
 
 

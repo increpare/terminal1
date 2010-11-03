@@ -20,9 +20,11 @@ class IMissYou:
 				self.otherid=message
 				#find other connection and link it to this one	
 				for c in self.factory.clients:
+					if not hasattr(c,'id'):
+						continue
 					if c.id == self.otherid:
 						if hasattr(c,'otherid'):
-							self.error()
+							self.error("duplicate client")
 						else:
 							c.otherid=self.id 
 							c.other=self
@@ -40,9 +42,11 @@ class IMissYou:
 								self.other.sendLine("LOCAL")
 								#self.error()
 							break
-
 				if not hasattr(self,'other'):
-					self.error()
+					self.error(" - no partner")
+				else: 
+					print "id pair" + self.id + " , " + self.otherid
+
 		elif self.state=="alone":
 			pass
 		elif self.state=="togethera":
@@ -53,7 +57,7 @@ class IMissYou:
 				self.other.state="called"
 				self.other.sendLine("ring")
 			else:
-				self.error()
+				self.error("bad message")
 		elif self.state=="calling":
 			pass
 		elif self.state=="called":
@@ -63,10 +67,11 @@ class IMissYou:
 		print message
 		
 	#close connection and sibling connection if there is one		
-	def error(self):
-		print date.today()
-		print "ERROR"
+	def error(self,msg):
+		print datetime.date.today()
+		print "ERROR:"+msg
 		traceback.print_stack();
 		for c in self.factory.clients:
-			if c.id==self.otherid or c.otherid == self.otherid:
-				c.halt()
+			if hasattr(c,"id") and hasattr(c,"otherid") and hasattr(self,"id") and hasattr(self,"otherid"):
+				if c.id==self.otherid or c.otherid == self.otherid:
+					c.halt(msg)

@@ -1,0 +1,5 @@
+cd /home/locus/server/twisted/
+git add .
+git commit -m "Nightly commit"
+git push origin master
+echo "Nightly github push successful: $(date)" >> /tmp/mybackup.log

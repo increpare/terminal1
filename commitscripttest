@@ -1,0 +1,1 @@
+echo "QQQNightly github push successful: $(date)" >> /tmp/mybackup.log

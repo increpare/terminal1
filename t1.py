@@ -32,7 +32,7 @@ class MyReceiver(basic.LineReceiver):
 	def lineReceived(self,line):
 		if line == "<policy-file-request/>":
 			print "\t sending policy file"
-			self.sendLine("<?xml version=\"1.0\"?><cross-domain-policy><allow-access-from domain=\"*\" to-ports=\"38527\" /></cross-domain-policy>")
+			self.sendLine("<?xml version=\"1.0\"?><cross-domain-policy><allow-access-from domain=\"*.increpare.com\" to-ports=\"38527\" /></cross-domain-policy>")
 		elif self.state=="preinitializing":
 			self.setGame(line)
 			self.state="initializing"

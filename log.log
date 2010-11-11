@@ -12884,4 +12884,253 @@ principal
 disconnect
 Got new client!
 Connection from160.33.43.65
-	 sending policy 
+	 sending policy file
+disconnect
+Got new client!
+Connection from160.33.43.65
+alone
+principal
+Got new client!
+Connection from160.33.43.65
+	 sending policy file
+disconnect
+Got new client!
+Connection from160.33.43.65
+alone
+principal
+disconnect
+Got new client!
+Connection from160.33.43.65
+	 sending policy file
+disconnect
+Got new client!
+Connection from160.33.43.65
+togethera/b
+160.33.43.65
+160.33.43.65
+local
+id pair394900826 , 40984863
+40984863
+call
+pickup
+disconnect
+disconnect
+Got new client!
+Connection from201.200.68.46
+	 sending policy file
+disconnect
+Got new client!
+Connection from201.200.68.46
+alone
+principal
+Got new client!
+Connection from86.30.203.134
+	 sending policy file
+disconnect
+Got new client!
+Connection from86.30.203.134
+alone
+principal
+disconnect
+disconnect
+Got new client!
+Connection from67.253.119.68
+	 sending policy file
+disconnect
+Got new client!
+Connection from67.253.119.68
+alone
+principal
+disconnect
+Got new client!
+Connection from194.80.33.140
+	 sending policy file
+disconnect
+Got new client!
+Connection from194.80.33.140
+alone
+principal
+disconnect
+Got new client!
+Connection from178.3.16.82
+	 sending policy file
+disconnect
+Got new client!
+Connection from178.3.16.82
+alone
+principal
+disconnect
+Got new client!
+Connection from24.168.97.234
+	 sending policy file
+disconnect
+Got new client!
+Connection from24.168.97.234
+alone
+principal
+disconnect
+Got new client!
+Connection from174.114.208.210
+	 sending policy file
+disconnect
+Got new client!
+Connection from174.114.208.210
+alone
+principal
+disconnect
+Got new client!
+Connection from71.84.194.2
+	 sending policy file
+disconnect
+Got new client!
+Connection from71.84.194.2
+alone
+principal
+Got new client!
+Connection from70.187.44.231
+	 sending policy file
+disconnect
+Got new client!
+Connection from70.187.44.231
+togethera/b
+71.84.194.2
+70.187.44.231
+id pair922394802 , 757137046
+757137046
+call
+pickup
+disconnect
+Got new client!
+Connection from70.187.44.231
+	 sending policy file
+disconnect
+Got new client!
+Connection from70.187.44.231
+duplicate client
+disconnect
+Got new client!
+Connection from132.162.244.3
+	 sending policy file
+disconnect
+Got new client!
+Connection from132.162.244.3
+duplicate client
+disconnect
+disconnect
+Got new client!
+Connection from132.162.244.3
+	 sending policy file
+disconnect
+Got new client!
+Connection from132.162.244.3
+alone
+principal
+Got new client!
+Connection from70.187.44.231
+	 sending policy file
+disconnect
+Got new client!
+Connection from70.187.44.231
+2010-11-11
+ERROR: - no partner
+757137046
+disconnect
+Got new client!
+Connection from70.187.44.231
+	 sending policy file
+disconnect
+Got new client!
+Connection from70.187.44.231
+alone
+principal
+Got new client!
+Connection from70.187.44.231
+	 sending policy file
+disconnect
+Got new client!
+Connection from70.187.44.231
+togethera/b
+70.187.44.231
+70.187.44.231
+local
+id pair353142793 , 884646664
+884646664
+call
+disconnect
+pickup
+disconnect
+disconnect
+Got new client!
+Connection from70.187.44.231
+	 sending policy file
+disconnect
+Got new client!
+Connection from70.187.44.231
+alone
+principal
+Got new client!
+Connection from71.84.194.2
+	 sending policy file
+disconnect
+Got new client!
+Connection from71.84.194.2
+alone
+principal
+disconnect
+Got new client!
+Connection from71.84.194.2
+	 sending policy file
+disconnect
+Got new client!
+Connection from71.84.194.2
+togethera/b
+70.187.44.231
+71.84.194.2
+id pair506284027 , 449768767
+449768767
+call
+pickup
+disconnect
+Got new client!
+Connection from71.84.194.2
+	 sending policy file
+disconnect
+Got new client!
+Connection from71.84.194.2
+alone
+principal
+disconnect
+Got new client!
+Connection from71.84.194.2
+	 sending policy file
+disconnect
+Got new client!
+Connection from71.84.194.2
+togethera/b
+71.84.194.2
+71.84.194.2
+local
+id pair342849030 , 428931543
+428931543
+call
+pickup
+disconnect
+disconnect
+Got new client!
+Connection from184.53.43.57
+	 sending policy file
+disconnect
+Got new client!
+Connection from184.53.43.57
+alone
+principal
+Got new client!
+Connection from68.35.209.117
+	 sending policy file
+disconnect
+Got new client!
+Connection from68.35.209.117
+togethera/b
+184.53.43.57
+68.35.209.117
+id pair887552013 , 2061991
